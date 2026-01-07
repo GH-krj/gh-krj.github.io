@@ -2,35 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>"Transport Track Frontend"</title>
-    <link rel="stylesheet" href=transport_track_CSS.css>
+    <title>Transport Track Frontend</title>
+    <link rel="stylesheet" href="transport_track_CSS.css">
 </head>
 <body>
 
+    <!-- Header with logo top-right -->
     <header>
-       <div class="container_1">
-           <h1> Transport Track Frontend</h1>
-       </div>
-        <div class="container_1">
-           <img src=images/gatehouse_maritime_logo.jpg>
-       </div>
+        <div class="logo">
+            <img src="images/gatehouse_maritime_logo.jpg" alt="Logo">
+        </div>
     </header>
 
+    <!-- Title closer to input field -->
+    <div class="hero-title">
+        <h1 class="page-title">Transport Track Frontend</h1>
+    </div>
+
     <main class="container_3">
-        <h3>Please provide the id of a Container Track </h3>
+        <h3>Please provide the id of a Container Track</h3>
         <form action="/process_input" method="post">
-            <p> Track id: <input type="text" name="track_id"> </p>
-            <p style="color: #123; font-size:12px"> (The track id must belong to a transport containing the TRANSPORT_TRACT feature) </p>
+            <p>Track id: <input type="text" name="track_id"></p>
+            <p style="color: #123; font-size:12px;">
+                (The track id must belong to a transport containing the TRANSPORT_TRACT feature)
+            </p>
         </form>
     </main>
 
-
     <div class="container_4">
-    <iframe src="/Transport_Track_Visualization_Tool/Transport_track_position_to_map_color_coded/123362_map_with_positions.html" frameborder="5" style="border:10; width:100%; height:500px;"></iframe>
+        <iframe src="/Transport_Track_Visualization_Tool/Transport_track_position_to_map_color_coded/123362_map_with_positions.html"
+                frameborder="0" style="width:100%; height:500px;"></iframe>
     </div>
 
-
-  <footer>
+    <footer>
         <div class="container_5">
             <p>&copy; 2024 Frontend - Test fra desktop</p>
         </div>

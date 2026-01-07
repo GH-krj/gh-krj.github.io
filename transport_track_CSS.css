@@ -1,70 +1,70 @@
-
 body {
-    font-family: "Arial", sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Header with logo top-right */
 header {
-    display: flex;
+    width: 100%;
+    height: 80px; /* adjust if needed */
+    position: relative;
     background-color: white;
-    justify-content: space-between;
-    align-items: center;
-    color: #123;
-    padding: 10px;
-}
-.container_1 {
-    background-color: white;
-    color: #123;
-    margin: 0;
-    text-align: center;
-    height: 10%;
-    width: 90%;
-    overflow: auto;
 }
 
-.container_1 img{
-    width: 70px; /* Adjust the width as needed */
-    height: auto;/* To maintain aspect ratio */
+/* Logo top-right */
+header .logo {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+header .logo img {
+    width: 70px;
+    height: auto;
     border-radius: 30px;
 }
 
-.container_1:first-child{
-    width: 65%;
-    text-align: right;
+/* Title closer to main content */
+.hero-title {
+    text-align: center;
+    margin-top: 20px; /* reduce distance to input field */
 }
 
-.container_1:last-child {
-    width: 15%; /* Adjust the width as needed */
-    text-align: center; /* Align the content to the right */
+.page-title {
+    font-size: 2.5rem; /* slightly smaller for closer spacing */
+    color: #123;
+    margin: 0;
 }
 
+/* Main form */
 .container_3 {
     background-color: white;
     color: #123;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: left;
-    height: 90%;
     width: 90%;
     overflow: auto;
-    text
 }
 
+/* Input focus styling */
 main input:focus {
-    border: 2px solid black; /* Highlight color */
-    outline: none; /* Remove default outline */
+    border: 2px solid black;
+    outline: none;
     border-radius: 8px;
 }
 
-
+/* Iframe container */
 .container_4 {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: white;
     overflow: auto;
-    padding: 130px;
+    padding: 20px;
 }
 
+/* Footer */
 footer {
     background-color: white;
     color: #123;
